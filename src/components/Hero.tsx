@@ -14,7 +14,7 @@ const Hero = () => {
         <Image src={light} alt="Light Source" />
       </div>
       <div className="relative z-10 flex flex-col justify-center items-center h-4/5 p-8 pt-64 text-center">
-        <h1 className=" text-4xl md:text-6xl p-8 font-bold "> 
+        <h1 className=" text-4xl md:text-6xl p-8 font-bold"> 
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, iusto!
         </h1>
         <h3 className="text-l md:text-xl p-6 text-zinc-400">
