@@ -60,8 +60,7 @@ const Hero = () => {
             variant={"outline"}
             size={"xl"}
             className="text-xl"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+            
           >
             Get Started
           </Button>
