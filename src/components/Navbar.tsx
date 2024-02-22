@@ -1,30 +1,42 @@
-"use client";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuIndicator,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  NavigationMenuViewport,
-} from "@/components/ui/navigation-menu";
-
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Button } from "./ui/button";
 import Link from "next/link";
 
 const Navbar = () => {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 50;
+      if (isScrolled !== scrolled) {
+        setScrolled(isScrolled);
+      }
+    };
+
+    document.addEventListener("scroll", handleScroll);
+
+    return () => {
+      document.removeEventListener("scroll", handleScroll);
+    };
+  }, [scrolled]);
+
   return (
     <>
-      <div className="flex items-center justify-between p-4 w-full  sticky top-0 z-10 max-w-full px-4 py-2   rounded-none shadow-md h-max  bg-opacity-80 backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4">
-        <div className="logoBox">
-          <Image src="/logo.png" width={150} height={20} alt="logo" />
-        </div>
-        <div className="navBox ml-auto">
-          <Link href="#contact">
-            <Button variant={"outline"} size={"lg"} className="text-xl" >Contact Us</Button>
-          </Link>
+      <div
+        className={`transition-all duration-500 ${
+          scrolled ? "opacity-0" : "opacity-100"
+        } fixed top-0 left-0 w-full bg-gray-800 bg-opacity-10 backdrop-filter backdrop-blur-lg `}
+      >
+        <div className="container mx-auto px-4 flex justify-between items-center">
+          <div className="logoBox">
+            <Image src="/logo.png" width={150} height={20} alt="logo" />
+          </div>
+          <div className="navBox">
+            <Link href="#contact" className="text-gray-100 px-4">
+             Contact
+            </Link>
+          </div>
         </div>
       </div>
     </>
@@ -32,4 +44,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
