@@ -45,12 +45,12 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.9, duration: 1 }}
-          className="text-lg md:text-xl p-6 text-gray-400"
+          className="text-xl md:text-xl p-6 text-gray-400"
         >
-          We supply industries with high quality agricultural waste for eco-friendly product manufacturing, your partner in sustainable solutions.
+          We supply industries with high quality agricultural waste for eco-friendly product manufacturing,<br/> your partner in sustainable solutions.
         </motion.h3>
         {/* CTA Button */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.1, duration: 1 }}
@@ -64,7 +64,7 @@ const Hero = () => {
           >
             Get Started
           </Button>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

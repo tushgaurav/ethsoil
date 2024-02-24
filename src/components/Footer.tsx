@@ -6,7 +6,7 @@ import { Button } from './ui/button';
 const ContactForm = () => {
     return (
         <section>
-            <div className="    px-4 mx-auto max-w-screen-md">
+            <div className=" max-w-screen-md">
                 <h2 className="mb-2 text-4xl tracking-tight font-extrabold  text-gray-900 dark:text-white">Get in touch</h2>
                 <p className="mb-4 font-light  text-gray-500 dark:text-gray-400 sm:text-xl">
                     Drop us a message to source through ethsoil.
@@ -35,12 +35,12 @@ const ContactForm = () => {
 const Footer = () => {
     return (
         <div className='w-auto bg-zinc-900 p-8'>
-            <div className='flex flex-wrap justify-around px-4 py-8'>
+            <div className='flex flex-wrap lg:justify-around px-4 py-8'>
                 <div>
-                    <Image src='/logo.png' width={150} height={50} alt='logo' />
-                    <h1 className='text-xl py-4 text-zinc-400'>Your Gateway to Hassle-free Procurement and Sourcing</h1>
+                    <Image src='/logo-main.png' width={150} height={50} alt='logo' />
+                    <h1 className='text-xl py-4 text-zinc-400'>Your gateway to hassle-free procurement and sourcing</h1>
 
-                    <div className="flex -mx-2">
+                    <div className="flex -m-2 my-4">
                         <a href="#" className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Linkedin">
                             <svg className="w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" /></svg>
 
@@ -52,7 +52,7 @@ const Footer = () => {
 
                     </div>
                 </div>
-                <div className='flex flex-wrap px-12 text-zinc-400' id="contact">
+                <div className='text-zinc-400' id="contact">
                     <ContactForm />
                     {/* <div className='px-6'>
                         <h2 className='py-2'>Product</h2>

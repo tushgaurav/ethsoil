@@ -14,7 +14,7 @@ export default function StatSection() {
 
   return (
     <section ref={ref} className="">
-      <div className="mx-auto max-w-screen-xl px-4 py-12 sm:px-6 md:py-16 lg:px-8">
+      <div className="mx-auto max-w-screen-xl px-16 py-12 sm:px-8 md:py-16 lg:px-8 ">
         {/* Value Proposition */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
