@@ -30,6 +30,7 @@ const LineWithCards = () => {
             <Badge variant="outline">Wheat Straw</Badge>
             <Badge variant="outline">Rice Straw</Badge>
             <Badge variant="outline">Sugarcane Bagasse</Badge>
+            <Badge variant="outline">Maize Stover</Badge>
           </CardFooter>
         </Card>
       </div>
@@ -75,9 +76,9 @@ const LineWithCards = () => {
           </CardHeader>
 
           <CardFooter className="flex flex-wrap gap-2 px-3">
-            <Badge variant="outline">Maize Stover</Badge>
             <Badge variant="outline">Packaging</Badge>
             <Badge variant="outline">Animal Feed</Badge>
+            <Badge variant="outline">Paper</Badge>
             <Badge variant="outline">Biofuel</Badge>
           </CardFooter>
         </Card>
