@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import light from "../../public/bg.png";
+import light from "../../public/bg.jpg";
 import grid from "../../public/Hero_Section.svg";
 import { Button } from "./ui/button";
 
@@ -18,7 +18,7 @@ const Hero = () => {
       </motion.div>
       {/* Light Source Image */}
       <div className="absolute top-0 right-0 z-0">
-        <Image className="opacity-30" src={light} alt="Light Source" />
+        <Image className="opacity-40 " width={2000} src={light} alt="Light Source" />
       </div>
       {/* Content */}
       <div className="relative z-10 flex flex-col justify-center items-center h-full p-8 text-center">
@@ -66,6 +66,7 @@ const Hero = () => {
           </Button>
         </motion.div> */}
       </div>
+      
     </div>
   );
 };

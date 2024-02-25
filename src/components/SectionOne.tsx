@@ -12,12 +12,12 @@ import HLine from "./ui/hline";
 
 const LineWithCards = () => {
   return (
-    <div className="max-w-screen-xl flex flex-col md:flex-row items-center justify-center px-16 mb-40 mx-auto">
+    <div className="max-w-screen-xl flex flex-col md:flex-row items-center justify-center px-16 mb-40 mx-auto mt-40">
       <div className="max-w-md relative">
         <Card className="bg-gradient-to-r from-zinc-800 to-zinc-900 p-4 border-2 border-zinc-400">
           <CardHeader className="p-4">
-            <div className="flex items-end gap-4 mb-4">
-              <Image src={"/industry.png"} width={60} height={60} alt="line" />
+            <div className="flex items-center gap-4 mb-4">
+              <Image src={"/industry.png"} width={80} height={60} alt="line" />
               <CardTitle>C Rop Residues</CardTitle>
             </div>
             <HLine />
@@ -51,7 +51,7 @@ const LineWithCards = () => {
               }}
             ></div>
             <Image
-              className="m-auto my-16 md:m-0"
+              className="m-auto my-16 md:m-0 "
               src={"/logo-nt.png"}
               width={100}
               height={80}
@@ -65,8 +65,8 @@ const LineWithCards = () => {
       <div className="max-w-md relative">
         <Card className="bg-gradient-to-r from-zinc-800 to-zinc-900 p-4 border-2 border-zinc-400">
           <CardHeader className="p-4">
-            <div className="flex items-end gap-4 mb-4">
-              <Image src={"/cr.png"} width={60} height={60} alt="line" />
+            <div className="flex items-center gap-4 mb-4">
+              <Image src={"/cr.png"} width={80} height={60} alt="line" />
               <CardTitle>Industries</CardTitle>
             </div>
             <HLine />

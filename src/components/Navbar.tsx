@@ -26,7 +26,7 @@ const Navbar = () => {
       <div
         className={`transition-all duration-500 ${
           scrolled ? "opacity-0" : "opacity-100"
-        } fixed top-0 left-0 w-full bg-gray-800 bg-opacity-10 backdrop-filter backdrop-blur-lg `}
+        } fixed top-0 left-0 w-full bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg `}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="logoBox">
