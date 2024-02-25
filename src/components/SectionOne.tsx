@@ -17,8 +17,8 @@ const LineWithCards = () => {
         <Card className="bg-gradient-to-r from-zinc-800 to-zinc-900 p-4 border-2 border-zinc-400">
           <CardHeader className="p-4">
             <div className="flex items-center gap-4 mb-4">
-              <Image src={"/industry.png"} width={80} height={60} alt="line" />
-              <CardTitle>C Rop Residues</CardTitle>
+              <Image src={"/cr.png"} width={80} height={60} alt="line" />
+              <CardTitle>Crop Residues</CardTitle>
             </div>
             <HLine />
             <CardDescription className="text-wrap py-4">
@@ -66,7 +66,7 @@ const LineWithCards = () => {
         <Card className="bg-gradient-to-r from-zinc-800 to-zinc-900 p-4 border-2 border-zinc-400">
           <CardHeader className="p-4">
             <div className="flex items-center gap-4 mb-4">
-              <Image src={"/cr.png"} width={80} height={60} alt="line" />
+              <Image src={"/industry.png"} width={80} height={60} alt="line" />
               <CardTitle>Industries</CardTitle>
             </div>
             <HLine />
