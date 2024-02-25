@@ -29,9 +29,7 @@ const LineWithCards = () => {
           <CardFooter className="flex flex-wrap gap-2 px-3">
             <Badge variant="outline">Wheat Straw</Badge>
             <Badge variant="outline">Rice Straw</Badge>
-            <Badge variant="outline">Maize Stover</Badge>
-            <Badge variant="outline">Sugarcane Baga</Badge>
-            <Badge variant="outline">SCC</Badge>
+            <Badge variant="outline">Sugarcane Bagasse</Badge>
           </CardFooter>
         </Card>
       </div>

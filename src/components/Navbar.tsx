@@ -24,17 +24,16 @@ const Navbar = () => {
   return (
     <>
       <div
-        className={`transition-all duration-500 ${
-          scrolled ? "opacity-0" : "opacity-100"
-        } fixed top-0 left-0 w-full bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg `}
+        className={`transition-all duration-500 ${scrolled ? "opacity-0" : "opacity-100"
+          }  w-full bg-black bg-opacity-90 backdrop-filter backdrop-blur-lg `}
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="logoBox">
             <Image src="/logo.png" width={150} height={20} alt="logo" />
           </div>
           <div className="navBox">
-            <Link href="#contact" className="text-gray-100 px-4">
-             Contact
+            <Link href="#contact" className="text-gray-100 px-4 -z-30">
+              Contact
             </Link>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import light from "../../public/bg.jpg";
+import light from "../../public/bg.png";
 import grid from "../../public/Hero_Section.svg";
 import { Button } from "./ui/button";
 
@@ -47,7 +47,7 @@ const Hero = () => {
           transition={{ delay: 0.9, duration: 1 }}
           className="text-xl md:text-xl p-6 text-gray-400"
         >
-          We supply industries with high quality agricultural waste for eco-friendly product manufacturing,<br/> your partner in sustainable solutions.
+          We supply industries with high quality agricultural waste for eco-friendly product manufacturing,<br /> your partner in sustainable solutions.
         </motion.h3>
         {/* CTA Button */}
         {/* <motion.div
@@ -66,7 +66,7 @@ const Hero = () => {
           </Button>
         </motion.div> */}
       </div>
-      
+
     </div>
   );
 };
