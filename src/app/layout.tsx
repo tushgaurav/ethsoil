@@ -18,7 +18,9 @@ export default function RootLayout({
   return (
     
     <html lang="en" className="dark" suppressHydrationWarning>
-      <head />
+      <head>
+        <script src="https://assets.usestyle.ai/seonajsplugin" defer id="seona-js-plugin"></script>
+      </head>
       <body>
         <ThemeProvider
           attribute="class"
